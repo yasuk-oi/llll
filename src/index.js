@@ -49,4 +49,52 @@
 /**
  * テンプレート文字列
  */
-const name = "";
+// const name = "じゃけぇ";
+// const age = 28;
+// //私の名前はnameです。年齢はageです。
+
+// //従来の方法
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
+
+// //テンプレート文字列を用いた方法（バッククォートを用いる）
+// const message2 = `私の名前は${name}です。年齢は${age}です。。。`;
+// console.log(message2);
+
+/**
+ * アロー関数
+ */
+//従来の関数
+// function func1(str) {
+//   return str;
+// }
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("func1です"));
+
+//アロー関数
+
+const func2 = (str) => {
+  return str;
+};
+console.log(func2("func2です"));
+
+//引数が1つの場合（）は無くても大丈夫
+// const func2 = str => {
+//   return str;
+// };
+// console.log(func2("func2です"));
+
+//return を省略可能
+// const func2 = (str) => str;
+// console.log(func2("func2です"));
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(func3(10, 20));
+
+//return を省略可能
+// const func3 = (num1, num2) => num1 + num2;
+// console.log(func3(10, 20));
